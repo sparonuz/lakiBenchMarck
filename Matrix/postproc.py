@@ -35,6 +35,7 @@ mean     = np.mean(measure, axis=1)
 std      = np.std(measure, axis=1)
 
 y = mean
+error = std
 plt.errorbar(x,y, yerr=error, label='Ulisse')
 plt.legend()
 
